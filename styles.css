@@ -1,0 +1,237 @@
+/* main-color: #FFFBFA
+accent:#8B2D08
+ light-accent: #FF6325 */
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html    {
+    font-size: 16px;
+}
+
+                        /* Header style */
+
+header  {
+    width: 100%;
+    height: 100vh;
+    background: url(imgs/main-bg-two.jpg) 0 60% no-repeat fixed;
+    background-size: cover;
+}
+
+.main-nav   {
+    width: 100%;
+    list-style: none;
+}
+
+#main-menu  {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#main-menu li   {
+    padding: 15px 30px;
+}
+
+#main-menu li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #FFFBFA;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+#main-menu:hover li:hover > a{
+    color: #8B2D08;
+}
+
+.fixed  {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fixed > li > a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFFBFA;
+    font-size: 1.4rem;
+    transition: 0.3s linear;
+}
+
+.fixed > li > a:hover   {
+    color: #8B2D08;
+    transform: scale(1.3);
+}
+
+h1  {
+    text-align: center;
+    margin-top: calc(50vh - 52px);
+    text-transform: capitalize;
+    font-size: 4rem;
+    color: #FFFBFA;
+    font-weight: bold;
+}
+
+
+#mc-embedded-subscribe-form input   {
+    border: 2px solid #8B2D08;
+}
+
+#mc-embedded-subscribe-form input:focus{
+    border-color: #8B2D08;
+}
+
+.sub-btn    {
+    display: block;
+    padding: 15px 45px;
+    background-color: #FFFBFA;
+    color: #8B2D08;
+    border-radius: 15px; 
+    margin: 10vh auto 0;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+
+
+.sub-btn:hover  {
+    background-color: #8B2D08;
+    border-color: #8B2D08;
+    color: #FFFBFA;
+}
+
+
+
+
+                                /* main style */
+
+main    {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    height: 350px;
+}
+
+.sec-main   {
+    width: 100%;
+    height: 100%;
+    padding: 60px 20px 0 20px;
+    background-color: rgb(247, 247, 247);
+    -webkit-clip-path: polygon(0 0, 57% 0, 43% 100%, 0 100%);
+    clip-path: polygon(0 0, 57% 0, 43% 100%, 0 100%);
+    border-bottom: 2px solid rgba(139, 45, 8, 0.041);
+    transition: 0.5s ease-out;
+}
+
+section:hover > .sec-main    {
+    -webkit-clip-path: polygon(0 0, 82% 0, 66% 100%, 0 100%);
+    clip-path: polygon(0 0, 82% 0, 66% 100%, 0 100%);
+    border-bottom: 2px solid rgb(139, 45, 8);
+}
+
+
+
+.sec-main > h2, .sec-bg > h2   {
+    text-transform: capitalize;
+    color: #8B2D08;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.sec-main > p, .sec-bg > p    {
+    line-height: 1.4;
+    color: #8B2D08;
+    width: 70%;
+}
+
+.sec-bg > p     {
+    width: 100%;
+}
+
+.sec-bg > h2    {
+    margin-top: 20px;
+}
+
+.sec-bg > p, .sec-bg > h2     {
+    text-align: center;
+}
+
+.sec-bg     {
+    padding-top: 0.1px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: right;
+    background-color: rgb(230, 146, 38);
+    transition: 0.4s ease-in-out;
+}
+
+.diff-color     {
+    background-color: rgb(247, 247, 247);
+}
+
+
+.diff-color > p     {
+    margin-bottom: 30px;
+}
+
+
+.we-do  {
+    background-image: url(imgs/we-do.jpg);
+}
+
+.security   {
+    background-image: url(imgs/security.jpg);
+}
+
+.we-do:hover, .security:hover     {
+    background-blend-mode: multiply;
+}
+
+
+
+#clients-logo   {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 10px;
+}
+
+#clients-logo > li  {
+    flex: 0 0 30%;
+    text-align: center;
+    font-size: 2.9rem;
+    margin-bottom: 60px;
+    color: #8B2D08;
+}
+
+
+.bottom-sec{
+    height: auto;
+    padding: 30px 20px;
+}
+
+
+                        /* foooter */
+
+footer  {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #8B2D08;
+    color: #FFFBFA;
+    text-align: center;
+}
+
+.footer-text    {
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
